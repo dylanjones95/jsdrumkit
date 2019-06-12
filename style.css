@@ -2,6 +2,11 @@ body {
     background-image: url("images/rockimpark.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .button {
@@ -11,16 +16,23 @@ display: inline-block;
 color: black;
 text-align: center;
 border: 2px solid #000000;
-padding: 10px 50px;
 font-weight: bold;
 letter-spacing: 0.05em;
 }
 
-#buttons {
-    display: flex;
-    margin-top: 20%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
+.button:hover {
+    background-color: aliceblue;
 }
+
+.button:active {
+    transform: translateY(1px);
+}
+
+#buttons {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
