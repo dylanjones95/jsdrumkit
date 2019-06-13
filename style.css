@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+
 body {
     background-image: url("images/background.gif");
     background-size: cover;
@@ -9,15 +11,27 @@ body {
     height: 100vh;
 }
 
+#title {
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    vertical-align: text-top;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20%;
+    font-size: 200%;
+}
+
 .button {
-background-color: white;
-font-size: 1em;
-display: inline-block;
-color: black;
-text-align: center;
-border: 2px solid #000000;
-font-weight: bold;
-letter-spacing: 0.05em;
+    background-color: white;
+    font-size: 1em;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    border: 2px solid #000000;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
 .button:hover {
@@ -34,5 +48,7 @@ letter-spacing: 0.05em;
     flex-wrap: wrap;
 }
 
-
-
+#bodyContent {
+    display: flex;
+    flex-direction: column;
+}
